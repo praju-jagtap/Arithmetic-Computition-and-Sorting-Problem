@@ -11,3 +11,5 @@ read -p "Enter a :" a
 read -p "Enter b :" b
 read -p "Enter c :" c
 
+#UC2
+soln[a+b*c]=$(( $a + $b * $c ))
