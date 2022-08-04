@@ -27,3 +27,6 @@ soln[a%b+c]=`echo $c $a $b | awk '{print $2%$3+$1}'`
 echo "Content in dictionary : "${soln[@]}
 echo "key values :" ${!soln[@]}
 
+#UC7
+arr=( ${soln[a+b*c]} ${soln[a*b+c]} ${soln[c+a/b]} ${soln[a%b+c]} )
+
