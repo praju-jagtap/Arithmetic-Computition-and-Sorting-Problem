@@ -13,3 +13,6 @@ read -p "Enter c :" c
 
 #UC2
 soln[a+b*c]=$(( $a + $b * $c ))
+
+#UC3
+soln[a*b+c]=$(( $a * $b + $c ))
