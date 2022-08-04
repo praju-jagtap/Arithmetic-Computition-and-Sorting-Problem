@@ -30,3 +30,17 @@ echo "key values :" ${!soln[@]}
 #UC7
 arr=( ${soln[a+b*c]} ${soln[a*b+c]} ${soln[c+a/b]} ${soln[a%b+c]} )
 
+#UC8
+for((i=0;i<4;i++))
+do
+for((j=0;j<4-i-1;j++))
+do
+if [[ ${arr[j]} -lt ${arr[$((j+1))]} ]]
+then
+temp=${arr[j]}
+arr[j]=${arr[$((j+1))]}
+arr[$((j+1))]=$temp
+fi
+done
+done
+echo "Sort in Descending order : " ${arr[@]}
