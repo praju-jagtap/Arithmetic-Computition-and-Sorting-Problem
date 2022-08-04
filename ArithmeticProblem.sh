@@ -16,3 +16,6 @@ soln[a+b*c]=$(( $a + $b * $c ))
 
 #UC3
 soln[a*b+c]=$(( $a * $b + $c ))
+
+#UC4
+soln[c+a/b]=$(( $c + (( $a / $b )) ))
