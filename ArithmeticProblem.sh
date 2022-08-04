@@ -19,3 +19,6 @@ soln[a*b+c]=$(( $a * $b + $c ))
 
 #UC4
 soln[c+a/b]=$(( $c + (( $a / $b )) ))
+
+#UC5
+soln[a%b+c]=`echo $c $a $b | awk '{print $2%$3+$1}'`
